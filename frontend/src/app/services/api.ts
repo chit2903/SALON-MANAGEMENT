@@ -3,11 +3,11 @@ import { storage } from './storage';
 
 const API_BASE_URLS = [
   import.meta.env.VITE_API_BASE_URL,
-  'http://localhost:5000',
+  'https://salon-management-acne.onrender.com',
   'http://localhost:3001',
 ].filter(Boolean) as string[];
 
-let activeBaseUrl = API_BASE_URLS[0] || 'http://localhost:5000';
+let activeBaseUrl = API_BASE_URLS[0] || 'https://salon-management-acne.onrender.com';
 
 const getAuthHeaders = (): HeadersInit => {
   const token = localStorage.getItem('salon-auth-token');
